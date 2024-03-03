@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Detection</title>
+<style>
+    body {
+        height: 2000px; /* Just for demonstration purpose to have enough scrollable area */
+    }
+</style>
+</head>
+<body>
+
+<script>
+    window.addEventListener("scroll", function() {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            console.log("So you do like me? I like you alive.");
+            // You can replace console.log with any other action you want, such as displaying an alert or modifying the DOM to show the message.
+        }
+    });
+</script>
+
+</body>
+</html>
